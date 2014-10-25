@@ -1,0 +1,53 @@
+<!doctype html>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<title>Fetch! - hey!</title>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'fetchme'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+  <h1>Meraba</h1>
+  <br>
+  <h3>@v2-alpha: slaytları tarayıp onlardaki kelimeleri ilgili sayfayla beraber indexliyor. tamamen sınav döneminde soru çalışmak için hazırlandı; henüz çok sağlam bir algoritma çalışmıyor, filtreleme yok mesela en basitinden (eğer aynı sayfada aradığınız kelime birden çok varsa o sayfayı bikaç kez görebilirsiniz). hani hatalar da illa ki çok olacaktır, bunları belirtmekten kesinlikle çekineyin.
+  ayrıca şu an üstünde çalıştığı server zamanla küçük gelebilir ve aşırı yüklenmeyi kaldıramayıp siteye ulaşılamayabilinir, ...vsvsvs... haber verin, yeniden çalıştırırım.
+  <br>
+  <br>
+  ayrıca, kurullar ilerledikçe sistemi elimden geldiğince güncel tutmaya çalışacağım.
+  <br>
+  <br>
+  <br>
+  Sevgiler
+  <br>
+  <h2>PS: Mali & <a href = "https://twitter.com/doktorculuk">@Doğan'a</a> özellikle teşekkürler
+  </h2>
+  </h3>
+  <br>
+  sorun şikayet ve önerilerinizi aşağıya yazabilirsiniz:
+  <br>
+  <div id="disqus_thread"></div>
+         <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'fetchme'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+        </div>
+  </h3>
+</div>
