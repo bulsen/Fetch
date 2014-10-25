@@ -39,22 +39,19 @@ there are two segments in this repo; a converter which needs libreoffice and the
 
 <h2>notes:</h2>
 
-	i couldn't run it on my vps, so be carefull. this is just for linux.
+i couldn't run it on my vps, so be carefull. this is just for linux.
 
-	<h3>encoding errors:</h3>
-		there might be some problems with mongo. you can handle that 
+<h3>encoding errors:</h3>
+there might be some problems with mongo. you can handle that 
 
-					export LC_ALL=C
+	export LC_ALL=C
 
-					it just works
+it just works. by the way whole code coded with utf-8 support, so there shouldn't be any encoding problems.
 
+<h3>changing the database names:</h3>
 
-	by the way whole code coded with utf-8 support, so there shouldn't be any encoding problems.
+	@slides/fetch_converter.py -> @48th line there is a abstarction
+	@mockapp.py 		-> @12nd line there is the same abstraction
 
-	<h3>changing the database names:</h3>
-
-			@slides/fetch_converter.py -> @48th line there is a abstarction
-			@mockapp.py 		-> @12nd line there is the same abstraction
-
-			you should change both of them.
+you should change both of them.
 
