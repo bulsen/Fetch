@@ -5,7 +5,7 @@ is a basic search and show engine for my personal usage. this thing was written 
 there are two segments in this repo; a converter which needs libreoffice and the webUI powered by flask. this is a very preliminary and very robust application. this is for personal usage, maybe for education; to prevent people write bad code like mine.
 
 
-<h2>dependencies:</h2>
+<h2>Dependencies:</h2>
 
 	python-pptx				# for converter
 	flask					# love this badboy
@@ -15,7 +15,7 @@ there are two segments in this repo; a converter which needs libreoffice and the
 	pdf2svg 				# for creating the static slides
 	cowsay					# yes it's very juvenile, i know and still love it
 
-<h2>anathomy:</h2>
+<h2>Anathomy:</h2>
 
 	fetchv2/				# main folder
 
@@ -23,21 +23,18 @@ there are two segments in this repo; a converter which needs libreoffice and the
 
 		templates/			# flask realted
 
-		pptxdude/			# can't remember why this is here <last place of pptx's><think as backup>
+		pptxdude/			# can't remember why this is here <backup for pptxs>
 
-		slaytlar/			# can't remember either
+		slides/				# where all starts
 
 		svgdude/			# static svgs of converted slides for flask related show things
 
-		fetch_converter.py 		# the converter
 		mockapp.py 			# main flask script
 	
 		sweep.sh 			# for all converting jobs /powered by cowsay
 
-		readme				# readme file
 
-
-<h2>notes:</h2>
+<h2>Notes:</h2>
 
 i couldn't run it on my vps, so be carefull. this is just for linux.
 
