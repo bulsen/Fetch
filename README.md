@@ -45,4 +45,4 @@ changing the database names:
 
 you should change both of them.
 
-and also in some segments there are turkish part which i intended to write how this things runs for my buddies. but main code is documented in english
+and also in some segments there are turkish; i wanted to tell my buddies how this thing works. but main code is documented in english
