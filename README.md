@@ -1,5 +1,5 @@
 
-<h1>fetchv2</h1>
+<h1>Fetch</h1>
 
 is a basic search and show engine for my personal usage. this thing was written in python with non-oop aspect. 
 there are two segments in this repo; a converter which needs libreoffice and the webUI powered by flask. this is a very preliminary and very robust application. this is for personal usage, maybe for education; to prevent people write bad code like mine.
