@@ -17,21 +17,14 @@ there are two segments in this repo; a converter which needs libreoffice and the
 
 <h2>Anathomy:</h2>
 
-	fetchv2/				# main folder
+	static/				# flask related for webUI
+	templates/			# flask related
+	pptxdude/			# backup for pptxs
+	slides/				# where all starts
+	svgdude/			# static svgs of converted slides for flask related show things
 
-		static/				# flask related for webUI
-
-		templates/			# flask realted
-
-		pptxdude/			# can't remember why this is here <backup for pptxs>
-
-		slides/				# where all starts
-
-		svgdude/			# static svgs of converted slides for flask related show things
-
-		mockapp.py 			# main flask script
-	
-		sweep.sh 			# for all converting jobs /powered by cowsay
+	mockapp.py 			# main flask script
+	sweep.sh 			# for all converting jobs /powered by cowsay
 
 
 <h2>Notes:</h2>
