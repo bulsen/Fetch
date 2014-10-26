@@ -1,0 +1,11 @@
+# dirs
+
+slides/*
+pptxdude/*
+pdfdude/*
+svgdude/*
+
+*.py~
+*.nohup
+nohup.*
+*.py~
