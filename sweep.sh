@@ -11,7 +11,7 @@ for file in $(find -type f -name '*.ppt');
 do
 new_name=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1)
 mv $file $new_name.ppt
-libreoffice --headless --invisible --convert-to pptx $new_name.pptx
+libreoffice --headless --invisible --convert-to pptx $new_name.ppt
 done
 
 cowsay -s "I've done the pptx conversions. Now strating fetch conversions "
