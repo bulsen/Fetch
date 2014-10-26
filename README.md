@@ -29,6 +29,8 @@ there are two segments in this repo; a converter which needs libreoffice and the
 
 <h2>Notes:</h2>
 
+works with python-pptx 0.4.2 for now; please use install script
+
 i couldn't run it on my vps, so be carefull. this is just for linux.
 
 encoding errors:
