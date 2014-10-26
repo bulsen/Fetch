@@ -33,7 +33,7 @@ import sys, os
 merb= sys.argv[1]
 
 if merb[:2] == "./":
-    merb = merb[:2]
+    merb = merb[2:]
 
 prs = Presentation(merb)
 
