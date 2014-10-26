@@ -20,5 +20,6 @@ cowsay -s "I've done the pptx conversions. Now strating fetch conversions "
 # this'll route the pptxs to the fetch_converter.py and convert them into 
 for pptxs in $(find -type f -name '*.pptx');
 do
+echo "pptxloop"
 python fetch_converter.py $pptxs
 done
