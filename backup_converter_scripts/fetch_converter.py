@@ -62,9 +62,9 @@ n =0
 for slide in prs.slides:
     n +=1
     for shape in slide.shapes:
-        if not shape.has_textframe:
+        if not shape.has_text_frame:
             continue
-        for paragraph in shape.textframe.paragraphs:
+        for paragraph in shape.text_frame.paragraphs:
             for run in paragraph.runs:
                 # for title and stuff
                 text_runs.append({ 'page': str(n) , 'text' : run.text})

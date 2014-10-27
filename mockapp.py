@@ -86,7 +86,7 @@ def my_form_post():
 	    return redirect("/%s"%request.form['search'])
 
 # for slides
-"""@app.route("/shomme/<dirname>/<number>")
+"""@app.route("/showme/<dirname>/<number>")
 def shigga(dirname,number):
 	# file download
 	return send_from_directory("svgdude/" + dirname, number+ ".svg")
@@ -96,7 +96,7 @@ def shuga(dirname,number):
 	# file download
 	return send_from_directory("svgdude/" + dirname, number+ ".svg")
 
-@app.route("/shomme/<dirname>/<number>")
+@app.route("/showme/<dirname>/<number>")
 def shigga(dirname,number):
 	# file download
 	return render_template("slider.html", dirname = dirname, number = number)

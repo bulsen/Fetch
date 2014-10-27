@@ -8,8 +8,6 @@ loc = document.location.href
 console.log(loc);
 var parts = loc.split("/");
 last = parts[parts.length - 1]
-
-
 document.onkeydown = function(e) {
     switch (e.keyCode) {
         case 37:
@@ -20,9 +18,24 @@ document.onkeydown = function(e) {
 break;
 }
 };
+function next(){
+	window.location.assign(parseInt(last)+1);
+};
+function previous(){
+    window.location.assign(parseInt(last)-1);
+};
 </script>
 </head>
 <body>
 <object data="/loco/{{dirname}}/{{number}}"></object>
+</br>
+</br>
+
+<form>
+<input type="button" id="button2" onclick="previous()"
+value="<<<<">
+<input type="button" id="button1" onclick="next()"
+value=">>>>">
+</form>
 
 </body>
