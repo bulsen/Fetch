@@ -9,7 +9,7 @@
       <h1>Şuralara bak:</h1>
        <div class=entries>
           {% for message in data %}    
-		<h2>{{ message.id}}. <a href = 'shomme/{{ message.filename}}/{{message.page}}'>{{message.querry}}</a></h2>
+		<h2>{{ message.id}}. <a href = 'showme/{{ message.filename}}/{{message.page}}'>{{message.querry}}</a></h2>
           {% endfor %}
        </div>
     {% else %}
