@@ -1,0 +1,15 @@
+<!doctype html>
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+<title>Fetch! - meraba </title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+<h1>Fetch!</h1>
+<br>
+<form action="/" method=post>
+    <input type=text name=search value="{{ request.form.search}}"> <input type=submit value="Fetch!">
+</form>
+
+<h3>
+ <a href ="/meraba">/meraba</a>
+</div>
+
