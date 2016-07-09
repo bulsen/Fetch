@@ -34,9 +34,7 @@ def search(querry):
 	ret_elemi = []
 	n = 1
 	for posts in collection.find({"querry" : querry}):
-		direc = posts["filename"]
-		direc = direc[2:]
-		ret_elems.append({'id' : n, 'filename' :posts["filename"], 'page': posts["pagenumber"], 'querry': posts["querry"] })	
+		ret_elems.append({'id' : n, 'filename' :posts["filename"].split("/")[-1][:-5], 'page': int(posts["pagenumber"])-1, 'querry': posts["querry"] })	
 		n +=1
 	return ret_elems
 
@@ -85,16 +83,10 @@ def my_form_post():
 	if request.method == "POST":
 	    return redirect("/%s"%request.form['search'])
 
-# for slides
-"""@app.route("/showme/<dirname>/<number>")
-def shigga(dirname,number):
-	# file download
-	return send_from_directory("svgdude/" + dirname, number+ ".svg")
-"""
 @app.route("/loco/<dirname>/<number>")
 def shuga(dirname,number):
 	# file download
-	return send_from_directory("svgdude/" + dirname, number+ ".svg")
+	return send_from_directory("svgdude/" + dirname, number+ ".jpg")
 
 @app.route("/showme/<dirname>/<number>")
 def shigga(dirname,number):
@@ -106,8 +98,7 @@ def contact():
 	return render_template("author.html")
 
 if __name__ == '__main__':
-	""" this runs on port 80, so... fuck security """
-	app.run(host ="0.0.0.0", port=80)
+	app.run(host ="0.0.0.0", port=4000)
 
 
 
