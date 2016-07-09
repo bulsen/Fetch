@@ -6,7 +6,6 @@ sys.setdefaultencoding("utf-8")
 import os, glob, random
 
 crown = os.getcwd() +"/"
-
 def rndnm(buff):
 	array = "qwertyuopasdfghjklizxcvbnmQWERTYUIOASDFGHJKLZXCVBNM1234567890"
 	ret = ""
@@ -68,11 +67,14 @@ def extractor(filename):
 
 	name = filename.split("/")[-1][:-5]
 	os.system("mkdir svgdude/%s" %name)
-	for temp in range(1,n+1):
-		print "svg stuff"
-		print filename, name
-		cmd = "pdf2svg "+ pdfiles+name+'.pdf'+" "+crown+"svgdude/"+name+"/"+str(temp)+".svg "+str(temp)
-		print cmd
+	for temp in range(0,n):
+		#print "svg stuff"
+		#print filename, name
+		#cmd = "pdf2svg "+ pdfiles+name+'.pdf'+" "+crown+"svgdude/"+name+"/"+str(temp)+".svg "+str(temp)
+		#cmd =  convert -density 300 -trim pdf[pagenumber] -quality 100 asd.jpg
+		#cmd = "convert -density 300 -trim "+pdfiles+name+".pdf["+str(temp)+"] -quality 85 "+crown+"svgdude/"+name+"/"+str(temp)+".jpg"
+		cmd = "convert "+pdfiles+name+".pdf["+str(temp)+"] -quality 85 "+crown+"svgdude/"+name+"/"+str(temp)+".jpg"
+		#print cmd
 		os.system(cmd)
 
 	#os.system("rm -rf %s.pdf"%filename.split("/")[-1][:-5])
